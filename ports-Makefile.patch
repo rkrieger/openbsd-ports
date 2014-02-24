@@ -1,0 +1,15 @@
+Index: Makefile
+===================================================================
+RCS file: /cvs/ports/Makefile,v
+retrieving revision 1.74
+diff -u -p -u -r1.74 Makefile
+--- Makefile	6 Jan 2013 16:14:10 -0000	1.74
++++ Makefile	24 Feb 2014 10:34:53 -0000
+@@ -59,6 +59,7 @@ SUBDIR += math
+ SUBDIR += meta
+ SUBDIR += misc
+ SUBDIR += multimedia
++SUBDIR += mystuff
+ SUBDIR += net
+ SUBDIR += news
+ SUBDIR += plan9
