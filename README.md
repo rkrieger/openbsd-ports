@@ -1,6 +1,6 @@
 # OpenBSD ports
 
-Intended as a supplement to the regular [OpenBDSD ports][portshb] collection, this repository houses porting instructions for various third-party software. Ultimate goal of these ports is inclusion in the [OpenBSD CVS repository][portscvs] where viable.
+Intended as a supplement to the regular [OpenBSD ports][portshb] collection, this repository houses porting instructions for various third-party software. Ultimate goal of these ports is inclusion in the [OpenBSD CVS repository][portscvs] where viable.
 
 ## Install instructions
 
