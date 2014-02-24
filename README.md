@@ -16,13 +16,12 @@ patch < mystuff/ports-Makefile.patch
 
 As with anything in life, there are certain things to be mindful of:
 
-These ports are created and maintained using the  [OpenBSD-current][faq.current] branch. As such, I recommend *against* using these ports on regular releases of OpenBSD. This prevents you from shooting yourself in the foot and messing up your system's environment. For more details, review the [OpenBSD FAQ #5][faq/5]. Still, there are no guarantees.
+These ports are created and maintained using the  [OpenBSD-current][faqcurrent] branch. As such, I recommend *against* using these ports on regular releases of OpenBSD. This prevents you from shooting yourself in the foot and messing up your system's environment. For more details, review the [OpenBSD FAQ #5][faq5]. Still, there are no guarantees.
 
 
-## Links
 
-[faq/current]: http://www.openbsd.org/faq/current.html "Tracking OpenBSD-current"
-[faq/5]: http://www.openbsd.org/faq/faq5.html#BldGetSrc "FAQ 5 - Building the System from Source"
+[faqcurrent]: http://www.openbsd.org/faq/current.html "Tracking OpenBSD-current"
+[faq5]: http://www.openbsd.org/faq/faq5.html#BldGetSrc "FAQ 5 - Building the System from Source"
 [ports7]: http://www.openbsd.org/cgi-bin/man.cgi?query=ports&sektion=7 "ports(7) man page"
 [portscvs]: http://www.openbsd.org/cgi-bin/cvsweb/ports "OpenBSD CVS tree: ports"
 [portshb]: http://www.openbsd.org/faq/ports/index.html "OpenBSD Porter's Handbook"
