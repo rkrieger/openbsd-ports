@@ -1,0 +1,12 @@
+@comment $OpenBSD$
+@bin bin/sflowtool
+share/doc/sflowtool/
+share/doc/sflowtool/COPYING
+share/doc/sflowtool/README
+share/examples/sflowtool/
+share/examples/sflowtool/README
+share/examples/sflowtool/ipTopTalkers
+share/examples/sflowtool/ipTrafficMatrix
+share/examples/sflowtool/sflowRRDChart.cgi
+share/examples/sflowtool/sflowRRDLoad
+share/examples/sflowtool/sflowenable

@@ -1,0 +1,5 @@
+sFlow Toollkit's core component, sflowtool, receives sFlow data and
+allows to generate binary output for tcpdump(1) or ASCII output for
+processing through scripts. Alternatively, sflowtool can generate
+NetFlow-compatible data from sFlow input and forward this output to a
+NetFlow collector.

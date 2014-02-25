@@ -1,0 +1,46 @@
+$OpenBSD$
+--- src/sflowtool.c.orig	Sat Oct 19 00:59:12 2013
++++ src/sflowtool.c	Tue Feb 25 16:51:32 2014
+@@ -506,20 +506,20 @@ char *URLEncode(char *in, char *out, int outlen)
+   -----------------___________________________------------------
+ */
+ 
+-char *IP_to_a(uint32_t ipaddr, char *buf)
++char *IP_to_a(uint32_t ipaddr, char *buf, int bufLen)
+ {
+   u_char *ip = (u_char *)&ipaddr;
+-  sprintf(buf, "%u.%u.%u.%u", ip[0], ip[1], ip[2], ip[3]);
++  snprintf(buf, bufLen, "%u.%u.%u.%u", ip[0], ip[1], ip[2], ip[3]);
+   return buf;
+ }
+ 
+ static char *printAddress(SFLAddress *address, char *buf, int bufLen) {
+   if(address->type == SFLADDRESSTYPE_IP_V4)
+-    IP_to_a(address->address.ip_v4.addr, buf);
++    IP_to_a(address->address.ip_v4.addr, buf, bufLen);
+   else {
+     u_char *b = address->address.ip_v6.addr;
+     // should really be: snprintf(buf, buflen,...) but snprintf() is not always available
+-    sprintf(buf, "%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x",
++    snprintf(buf, bufLen, "%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x:%02x%02x",
+ 	    b[0],b[1],b[2],b[3],b[4],b[5],b[6],b[7],b[8],b[9],b[10],b[11],b[12],b[13],b[14],b[15]);
+   }
+   return buf;
+@@ -1550,7 +1550,7 @@ static uint32_t getAddress(SFSample *sample, SFLAddres
+ 
+ static char *printTag(uint32_t tag, char *buf, int bufLen) {
+   // should really be: snprintf(buf, buflen,...) but snprintf() is not always available
+-  sprintf(buf, "%u:%u", (tag >> 12), (tag & 0x00000FFF));
++  snprintf(buf, bufLen, "%u:%u", (tag >> 12), (tag & 0x00000FFF));
+   return buf;
+ }
+ 
+@@ -4097,7 +4097,7 @@ static int addForwardingTarget(char *hostandport)
+   }
+   if(strlen(hostandport) > MAX_HOSTANDPORT_LEN) return NO;
+   // take a copy
+-  strcpy(hoststr, hostandport);
++  strlcpy(hoststr, hostandport, sizeof(hoststr));
+   // find the '/'
+   for(p = hoststr; *p != '\0'; p++) if(*p == '/') break;
+   if(*p == '\0') {

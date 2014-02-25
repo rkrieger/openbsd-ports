@@ -1,0 +1,10 @@
+$OpenBSD$
+
+${WRKDIR}/src/sflowtool.c
+	Changed IP_to_a to include a bufLen similar to its calling function
+	to ensure equally sized buffer.
+
+	Switched to snprintf(3) instead of sprintf(3) as already hinted
+	at in the source.
+
+	Switched to use strlcpy(3) instead of strcpy(3).
