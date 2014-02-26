@@ -2,7 +2,9 @@
 
 COMMENT =		create and use a local lib/ for perl modules with PERL5LIB
 
-DISTNAME =		local-lib-2.000004
+V =			2.000004
+DISTNAME =		local-lib-${V}
+PKGNAME =		p5-local-lib-${V}
 
 CATEGORIES =		devel
 
@@ -11,6 +13,7 @@ CATEGORIES =		devel
 PERMIT_PACKAGE_CDROM = Yes
 
 MODULES =		cpan
+CPAN_AUTHOR =		HAARG
 #MAKE_ENV =		???
 
 .include <bsd.port.mk>
