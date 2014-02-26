@@ -18,7 +18,7 @@ If you wish to place items in another directory, adjust these instructions accor
 
 As with anything in life, there are certain things to be mindful of:
 
-1. These ports are created and maintained using the  [OpenBSD-current][faqcurrent] branch. As such, I recommend *against* using these ports on regular releases of OpenBSD. This prevents you from shooting yourself in the foot and messing up your system's environment. For more details, review the [OpenBSD FAQ #5][faq5]. Still, there are no guarantees.
+1. These ports are created and maintained using the [OpenBSD-current][faqcurrent] branch. As such, I recommend *against* using these ports on regular releases of OpenBSD. This prevents you from shooting yourself in the foot and messing up your system's environment. For more details, review the [OpenBSD FAQ #5][faq5]. Still, there are no guarantees.
 2. *Do not* extract the repository in your ports root directory, use a subdirectory (`mystuff`) instead. The repository contains `Makefile`s that would otherwise overwrite and break your ports checkout.
 
 
