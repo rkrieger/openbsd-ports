@@ -16,7 +16,7 @@ patch < mystuff/ports-Makefile.patch
 
 As with anything in life, there are certain things to be mindful of:
 
-These ports are created and maintained using the  [OpenBSD-current][faqcurrent] branch. As such, I recommend *against* using these ports on regular releases of OpenBSD. This prevents you from shooting yourself in the foot and messing up your system's environment. For more details, review the [OpenBSD FAQ #5][faq5]. Still, there are no guarantees.
+These ports are created and maintained using the [OpenBSD-current][faqcurrent] branch. As such, I recommend *against* using these ports on regular releases of OpenBSD. This prevents you from shooting yourself in the foot and messing up your system's environment. For more details, review the [OpenBSD FAQ #5][faq5]. Still, there are no guarantees.
 
 
 
