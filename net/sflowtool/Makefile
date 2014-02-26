@@ -19,26 +19,11 @@ PERMIT_DISTFILES_FTP = ${PERMIT_PACKAGE_CDROM}
 
 WANTLIB =		c
 
-# where the source files and patches can be fetched
-#
 MASTER_SITES =		http://www.inmon.com/bin/
 
-# Dependencies
-#
-#MODULES =		???
-#BUILD_DEPENDS =	???
-#RUN_DEPENDS =		???
-#LIB_DEPENDS =		???
-#TEST_DEPENDS =		???
-
-#MAKE_FLAGS =		???
-#MAKE_ENV =		???
-#FAKE_FLAGS =		???
-#TEST_FLAGS =		???
-
-# build/configuration variables
 SEPARATE_BUILD =	Yes
 CONFIGURE_STYLE =	gnu
+AUTOCONF_VERSION =	2.69
 
 # Enable sflowtool -S option for sFlow-to-Netflow conversion
 COPTS +=		-DSPOOFSOURCE
