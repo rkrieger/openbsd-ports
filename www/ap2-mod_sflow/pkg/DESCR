@@ -1,0 +1,4 @@
+mod_sflow allows logging from Apache to a central collector using sFlow.
+It's intended for continuous, real-time monitoring of large web clusters
+in a similar fashion as possible for switches and routers that
+implement sFlow.

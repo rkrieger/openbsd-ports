@@ -1,0 +1,4 @@
+@comment $OpenBSD$
+lib/apache2/mod_sflow.so
+share/doc/apache2/mod/mod_sflow/
+share/doc/apache2/mod/mod_sflow/README
