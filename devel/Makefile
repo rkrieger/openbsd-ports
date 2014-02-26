@@ -1,7 +1,6 @@
 # $OpenBSD$
 
      SUBDIR =
-     SUBDIR += devel
-     SUBDIR += net
+     SUBDIR += p5-local-lib
 
 .include <bsd.port.subdir.mk>
