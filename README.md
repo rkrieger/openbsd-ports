@@ -4,15 +4,21 @@ Intended as a supplement to the regular [OpenBSD ports][portshb] collection, thi
 
 ## Install instructions
 
-These instructions assume the files in this repository reside in `/usr/ports/mystuff`. Inclusion in the regular ports infrastructure is done through patching the root ports `Makefile`. The patch merely adds the `mystuff` to the list of `SUBDIR` entries. If you skip this step, build tools may skip the ports in the `mystuff` directory.
+These instructions assume the files in this repository reside in `/usr/ports/mystuff`. Inclusion in the regular ports infrastructure is done through patching the root ports `Makefile`. Since the `mystuff` directory is included in searches for ports, no further steps are required.
 
 ```bash
 cd /usr/ports
 git clone https://github.com/rkrieger/openbsd-ports.git mystuff
-patch < mystuff/ports-Makefile.patch
 ```
 
-If you wish to place items in another directory, adjust these instructions accordingly. Adding the files from the repository to the root of your ports tree is *not* recommended (due to existing `Makefile`s being overwritten by `git clone`).
+If you wish to place items in another directory, you can use the `ports-Makefile.patch` file, after adjusting its `mystuff` to your liking. If you skip this step, the ports tools may not pick up the ports in this repository. Patching would be as simple as:
+
+```bash
+cd /usr/ports
+patch < $otherdir/ports-Makefile.patch
+```
+
+Adding the files from the repository to the root of your ports tree is *not* recommended (due to existing `Makefile`s being overwritten by `git clone`).
 
 ## Caveats
 
