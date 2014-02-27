@@ -7,3 +7,11 @@ to your /etc/apache2/httpd2.conf file:
 If you already have Apache running on your machine,
 you should not use "apachectl2 restart" - instead,
 you should fully stop and then restart the server.
+
+Additionally, exporting sFlow data to your desired collector
+requires you to set up an appropriate ${SYSCONFDIR}/hsflowd.auto
+file with sampling/polling settings.
+
+The ${TRUEPREFIX}/share/doc/apache2/mod/mod_sflow/ directory
+contains a basic example, as well as additional configuration
+hints in the README.
