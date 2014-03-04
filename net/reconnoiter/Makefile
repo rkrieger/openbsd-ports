@@ -7,8 +7,9 @@ COMMENT-stratcon =	large-scale monitoring and trend analysis system (server)
 COMMENT-java =		java functionality extensions for reconnoiter
 COMMENT-docs =		large-scale monitoring and trend analysis system (docs)
 
-V =			
-VERSION =		0.1.${V}
+# Using Github abbreviated commit hash
+V =			cf168a0
+VERSION =		0.1.1_${V}
 DISTNAME =		reconnoiter-${VERSION}
 PKGNAME-main =		reconnoiter-noit-${VERSION}
 PKGNAME-stratcon =	reconnoiter-stratcon-${VERSION}
