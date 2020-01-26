@@ -1,0 +1,17 @@
+$OpenBSD$
+
+Since these are commands for system operation and we install to
+${PREFIX}/sbin, similarly adjust the man pages section to 8.
+
+Index: Makefile
+--- Makefile.orig
++++ Makefile
+@@ -95,7 +95,7 @@ CTFCONVERT = /usr/bin/true
+ CFILES += plat/bsd.c plat/unix_common.c
+ HDRS += plat/unix_common.h
+ PLATFORM_OK = true
+-MANSECT = 1
++MANSECT = 8
+ endif
+ 
+ ifeq ($(PLATFORM_OK),false)

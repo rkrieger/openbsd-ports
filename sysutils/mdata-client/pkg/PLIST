@@ -1,0 +1,9 @@
+@comment $OpenBSD: PLIST,v$
+@man man/man8/mdata-delete.8
+@man man/man8/mdata-get.8
+@man man/man8/mdata-list.8
+@man man/man8/mdata-put.8
+@bin sbin/mdata-delete
+@bin sbin/mdata-get
+@bin sbin/mdata-list
+@bin sbin/mdata-put

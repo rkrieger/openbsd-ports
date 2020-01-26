@@ -1,0 +1,8 @@
+The mdata-client tools allow Triton/SmartOS guests to access and
+manipulate metadata key-value pairs available from the hypervisor.
+
+This mechanism allows for setting hostnames, retrieving provisioning
+scripts or communicating other data, such as public ssh keys.
+
+The tools use the Joyent Metadata Protocol version 2 over the second
+serial device (/dev/cua01).
