@@ -1,5 +1,3 @@
-# $OpenBSD$
-
 SHARED_ONLY =		Yes
 
 COMMENT =		Log Apache traffic to an sFlow collector

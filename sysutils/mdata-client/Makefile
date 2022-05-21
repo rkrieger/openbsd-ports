@@ -1,5 +1,3 @@
-# $OpenBSD: Makefile.template,v 1.85 2019/09/09 19:19:05 kmos Exp $
-#
 # Replace ??? with appropriate values
 # Remove extraneous comments before commit
 # Use /usr/ports/infrastructure/bin/portcheck

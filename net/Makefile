@@ -1,5 +1,3 @@
-# $OpenBSD$
-
      SUBDIR =
 #     SUBDIR += reconnoiter
      SUBDIR += sflowtool

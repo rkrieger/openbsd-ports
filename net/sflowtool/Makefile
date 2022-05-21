@@ -1,5 +1,3 @@
-# $OpenBSD$
-
 COMMENT =		sFlow collector and sFlow-to-NetFlow conversion tool
 
 DISTNAME =		sflowtool-3.30

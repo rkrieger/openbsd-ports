@@ -1,5 +1,3 @@
-# $OpenBSD$
-
      SUBDIR =
      SUBDIR += ap2-mod_sflow
 

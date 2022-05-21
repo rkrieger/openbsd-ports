@@ -1,5 +1,3 @@
-# $OpenBSD$
-
      SUBDIR =
      SUBDIR += mdata-client
 

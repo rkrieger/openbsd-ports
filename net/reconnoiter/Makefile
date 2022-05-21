@@ -1,5 +1,3 @@
-# $OpenBSD$
-
 SHARED_ONLY =		Yes
 
 COMMENT-main =		large-scale monitoring and trend analysis system (node)
