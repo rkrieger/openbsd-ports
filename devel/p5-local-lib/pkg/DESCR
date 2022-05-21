@@ -1,4 +1,0 @@
-local::lib lets you create and use a local lib/ directory for perl
-modules with PERL5LIB. This allows you to set up an environment
-of Perl modules separate from the main system, e.g. when developing
-applications or modules of your own.
