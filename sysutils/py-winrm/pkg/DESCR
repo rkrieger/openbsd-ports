@@ -1,0 +1,2 @@
+'winrm' is Python library for Windows Remote Management (WinRM),
+enabling the administration of Windows systems (e.g. via Ansible).

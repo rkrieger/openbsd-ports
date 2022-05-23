@@ -1,0 +1,33 @@
++-------------------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-------------------------------------------------------------------------------
+
+Authentication types
+====================
+
+${PKGSTEM} supports several authentication types:
+  - Basic
+  - NTLM
+  - Kerberos
+  - CredSSP
+
+The ${PKGSTEM} package supports only the Basic and NTLM as authentication
+types, to limit the number of external dependencies. Enabling the other
+types is a simple matter of installing the relevant Python modules.
+
+
+Kerberos
+--------
+You can add Kerberos support by also installing the 'requests-kerberos'
+module, available as port/package 'www/py-requests-kerberos'.
+
+Note that this also requires setting up the appropriate Kerberos
+infrastructure on your host. The 'requests-kerberos' module ensures that
+the required dependencies are also installed. For further instructions,
+see e.g. krb5.conf(5).
+
+
+CredSSP
+-------
+You can add CredSSP support by also installing the 'requests-credssp'
+module, available as port/package 'www/py-requests-credssp'.
