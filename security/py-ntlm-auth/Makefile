@@ -17,10 +17,12 @@ PERMIT_PACKAGE =	Yes
 
 MODULES =		lang/python
 MODPY_SETUPTOOLS =	Yes
+MODPY_PYTEST =		Yes
+
+FLAVORS =		python3
+FLAVOR =		python3
 
 RUN_DEPENDS =		security/py-cryptography${MODPY_FLAVOR}
-
-#BUILD_DEPENDS =		security/py-cryptography${MODPY_FLAVOR}
 
 TEST_DEPENDS =		devel/py-test${MODPY_FLAVOR} \
 			devel/py-test-cov${MODPY_FLAVOR} \
