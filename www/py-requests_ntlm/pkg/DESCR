@@ -1,0 +1,2 @@
+'requests_ntlm' is a library that allows using NTLM authentication with
+the Python 'requests' module.
